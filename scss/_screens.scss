@@ -1,0 +1,55 @@
+
+/* Extra small devices (phones, 600px and down) */
+@include mediaXs {
+    
+    main{
+        align-items: center;
+        text-align: center;
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+    .about-info{
+        grid-template-areas: 
+        'bio-img'
+        'bio'
+        'job-1'
+        'job-2'
+        'job-3';
+        grid-template-columns: 1fr;
+    }
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@include mediaSm {
+    
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@include mediaMd {
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@include mediaLg {
+    .projects{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@include mediaXl {
+   
+}
